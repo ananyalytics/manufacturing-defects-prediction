@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1790682635599
+current_stage: Staging
+description: ''
+last_updated_timestamp: 1790682635666
+name: Manufacturing_Defects_RF_Model
+run_id: 7664b7e7ea124ae2b0af8aa39a9311a8
+run_link: ''
+source: /tmp/notebooks/mlruns/318356333889441341/7664b7e7ea124ae2b0af8aa39a9311a8/artifacts/random_forest_model
+status: READY
+status_message: null
+storage_location: /tmp/notebooks/mlruns/318356333889441341/7664b7e7ea124ae2b0af8aa39a9311a8/artifacts/random_forest_model
+user_id: null
+version: 1
