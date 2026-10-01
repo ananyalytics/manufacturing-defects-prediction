@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]   # internal container port stays 9090; only the HOST mapping changed to 9091
+
+  - job_name: "fastapi_demo"
+    static_configs:
+      - targets: ["fastapi-demo:8000"]
