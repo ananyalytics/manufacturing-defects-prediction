@@ -1,0 +1,10 @@
+# Install locally (or inside the Jupyter container) for hands-on labs
+# that are Python packages, not standalone services.
+# Run: pip install -r participant-requirements.txt --break-system-packages
+
+dvc==3.51.2                # Module 2 — Data Version Control
+great_expectations==0.18.19  # Module 2 — Data validation/profiling
+mlflow==2.14.1              # Module 3 — client library (matches server version above)
+scikit-learn==1.5.0          # Module 3 — sample model training for MLflow demos
+pandas==2.2.2
+requests==2.32.3            # Module 4 — hitting the FastAPI demo endpoint
