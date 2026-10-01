@@ -82,19 +82,43 @@ Using telemetry from the `manufacturing_defects.csv` dataset, the system analyze
 
 ```text
 ├── dags/
-│   └── ml_pipeline_dag.py        # Automated Airflow training and registration DAG
+│   ├── ml_pipeline_dag.py
+│   ├── starter_pipeline.py   
+│   └── __pycache__/
+│
+├── evidence-screenshots/
+│   ├── airflow-run.png
+│   ├── fasapi-demo.png
+│   ├── grafana-visuals.png
+│   ├── mlflow-overview.png 
+│   └── model-metrics.png
+│
 ├── fastapi-demo/
-│   ├── Dockerfile                # Container configuration for model serving
-│   ├── requirements.txt          # API dependencies (FastAPI, uvicorn, mlflow, etc.)
-│   └── app.py                    # Real-time inference application & Prometheus endpoint
+│   ├── Dockerfile                
+│   ├── requirements.txt          
+│   └── app.py                    
+│
+├── jupyter/
+│   ├── requirements.txt          
+│   └── app.py 
+│
+├── mlflow-data/
+│   ├── Model Metrics.png         
+│   └── Overview.png
+│
 ├── notebooks/
-│   ├── manufacturing_defects.csv # Primary production dataset
-│   ├── experiment_tracking.ipynb # Prototyping, feature engineering, and model training
-│   └── mlruns/                   # Local artifact and run repository for MLflow
+│   ├── GUVI PRO.ipynb 
+│   ├── manufacturing_dafects.csv
+│   ├── ipynb_checkpoints/
+│   └── mlruns/                  
+│
 ├── prometheus/
-│   └── prometheus.yml            # Prometheus target scrape configurations
-├── docker-compose.yml            # Complete infrastructure specification
-└── README.md                     # Project documentation
+│   └── prometheus.yml           
+│
+├── docker-compose.yml  
+├── participant-requirements.txt
+├── verify-setup.sh          
+└── README.md                    
 
 ```
 
